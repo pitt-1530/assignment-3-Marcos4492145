@@ -14,7 +14,7 @@ public class PlaylistRecommender {
         }
         //Calculate average
         int total = 0;
-        for(int i = 0; i <= bpms.size(); i++){
+        for(int i = 0; i < bpms.size(); i++){
             total += bpms.get(i);
         }
         int average = total/bpms.size();
@@ -43,7 +43,7 @@ public class PlaylistRecommender {
         }
         //ensure the title only contains letters and spaces
         char[] charArray = title.toCharArray();
-        for(int i = 0; i <= title.length(); i++){
+        for(int i = 0; i < title.length(); i++){
             if(!Character.isLetter(charArray[i]) && (charArray[i] != ' ')){
                 return false;
             }
